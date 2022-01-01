@@ -20,7 +20,7 @@ $sidebar-width: 280px;
 }
 
 #view-area {
-    margin: 0px 0 60px 0;
+    margin: 10px 0 60px 0;
 }
 
 .navbar {
@@ -31,6 +31,17 @@ $sidebar-width: 280px;
     .navbar-brand {
         font-weight: 500 !important;
     }
+}
+
+#toggle-sidebar {
+    position: fixed;
+    left: calc($sidebar-width + 20px) !important;
+    top: 0;
+    color: #0091e6;
+    background-color: #e6f6ff;
+    font-size: 20px;
+    border: none;
+    padding: 4px 8px;
 }
 
 
