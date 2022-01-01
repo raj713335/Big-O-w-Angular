@@ -1,1 +1,39 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    color: #3c3c3c !important;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600 !important;
+    color: #0081cc;
+}
+
+strong {
+    font-weight: 600 !important;
+    letter-spacing: 0.2px !important;
+}
+
+.bg-faint-pink {
+    background-color: #fde9f4;
+}
+
+.bg-faint-blue {
+    background-color: #e6f6ff;
+}
+
+.list-display > li {
+    margin: 20px 0;
+}

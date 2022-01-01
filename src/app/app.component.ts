@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'bigo';
+
+  collapseSidebar: boolean = false;
+
+  toggleSidebar() {
+    
+    if(this.collapseSidebar == true)
+    {
+      this.collapseSidebar = false;
+    }
+    else
+    {
+      this.collapseSidebar = true;
+    }
+  }
 }
