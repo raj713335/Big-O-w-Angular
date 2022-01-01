@@ -10,7 +10,7 @@ import { AlgorithmsComponent } from './algorithms/algorithms.component';
 
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { BigocheatsheetComponent } from './bigocheatsheet/bigocheatsheet.component';
-import { GithubComponent } from './github/github.component';
+import { MorecontactComponent } from './morecontact/morecontact.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +21,7 @@ import { GithubComponent } from './github/github.component';
     DatastructuresComponent,
     AlgorithmsComponent,
     BigocheatsheetComponent,
-    GithubComponent
+    MorecontactComponent
   ],
   imports: [
     BrowserModule,

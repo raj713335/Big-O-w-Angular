@@ -5,7 +5,7 @@ import { BigonotationsComponent } from "../bigonotations/bigonotations.component
 import { DatastructuresComponent } from "../datastructures/datastructures.component";
 import { AlgorithmsComponent } from "../algorithms/algorithms.component";
 import { BigocheatsheetComponent } from "../bigocheatsheet/bigocheatsheet.component";
-import { GithubComponent } from "../github/github.component";
+import { MorecontactComponent } from "../morecontact/morecontact.component";
 
 export const routes: Routes = [
     { path: 'introduction', component: IntroductionComponent },
@@ -13,6 +13,6 @@ export const routes: Routes = [
     { path: 'cheatsheet', component: BigocheatsheetComponent },
     { path: 'ds', component: DatastructuresComponent },
     { path: 'algo', component: AlgorithmsComponent },
-    { path: 'github', component: GithubComponent },
+    { path: 'more', component: MorecontactComponent },
     { path: '', redirectTo: '/introduction', pathMatch: 'full' }
 ];
