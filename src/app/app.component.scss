@@ -16,6 +16,7 @@ $sidebar-width: 280px;
     max-width: calc(100% - $sidebar-width);
     margin-left: $sidebar-width;
     transition: 0.3s ease-in-out;
+    overflow-x: hidden;
 }
 
 #view-area {

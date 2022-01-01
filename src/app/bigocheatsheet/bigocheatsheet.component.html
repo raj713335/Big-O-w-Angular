@@ -16,18 +16,18 @@
       </tr>
       <tr>
         <th scope="col">Worst Case</th>
-        <th scope="col">Worst Case</th>
         <th scope="col">Best Case</th>
         <th scope="col">Average Case</th>
+        <th scope="col">Worst Case</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <th scope="row">Insertion Sort</th>
-        <td>O(1)</td>
-        <td>O(n)</td>
-        <td>O(n<sup>2</sup>)</td>
-        <td>O(n<sup>2</sup>)</td>
+      <tr *ngFor="let sortAlgo of sortingAlgoList">
+        <th class="text-start">{{ sortAlgo.name }}</th>
+        <td>{{ sortAlgo.sc_worst }}</td>
+        <td>{{ sortAlgo.tc_best }}</td>
+        <td>{{ sortAlgo.tc_average }}</td>
+        <td>{{ sortAlgo.tc_worst }}</td>
       </tr>
     </tbody>
   </table>
