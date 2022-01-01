@@ -10,6 +10,7 @@ import { AlgorithmsComponent } from './algorithms/algorithms.component';
 
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { BigocheatsheetComponent } from './bigocheatsheet/bigocheatsheet.component';
+import { GithubComponent } from './github/github.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { BigocheatsheetComponent } from './bigocheatsheet/bigocheatsheet.compone
     BigonotationsComponent,
     DatastructuresComponent,
     AlgorithmsComponent,
-    BigocheatsheetComponent
+    BigocheatsheetComponent,
+    GithubComponent
   ],
   imports: [
     BrowserModule,
