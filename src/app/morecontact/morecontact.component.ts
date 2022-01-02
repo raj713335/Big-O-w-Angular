@@ -12,4 +12,8 @@ export class MorecontactComponent implements OnInit {
   ngOnInit() {
   }
 
+  getValues(val) {
+    console.log(val);
+  }
+
 }

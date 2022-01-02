@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { from } from 'rxjs';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
@@ -33,7 +35,8 @@ import { DatastructurelistService } from './services/datastructurelist.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [SortingalgolistService, DatastructurelistService],
   bootstrap: [AppComponent]
