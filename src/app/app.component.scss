@@ -1,4 +1,4 @@
-$sidebar-width: 280px;
+$sidebar-width: 270px;
 
 #sidebar-wrapper {
     min-width: $sidebar-width;
@@ -52,20 +52,21 @@ $sidebar-width: 280px;
     #sidebar-wrapper {
         min-width: $sidebar-width;
         width: $sidebar-width;
-        left: -$sidebar-width;
+        left: 0;
     }
 
     #view-content-wrapper {
-        margin-left: 0;
+        max-width: calc(100% - $sidebar-width);
+        margin-left: $sidebar-width;
     }
 
     .hide-sidebar {
-        left: 0 !important;
+        left: -$sidebar-width !important;
     }
     
     .full-content-view {
-        max-width: calc(100% - $sidebar-width) !important;
-        margin-left: $sidebar-width !important;
+        max-width: 100% !important;
+        margin-left: 0 !important;
     }
     
 }

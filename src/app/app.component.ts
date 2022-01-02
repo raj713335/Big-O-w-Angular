@@ -12,14 +12,14 @@ export class AppComponent implements OnInit, OnDestroy {
   title = 'bigo';
 
   subscription: Subscription;
-  collapseSidebar: boolean = false;
+  hideSidebar: boolean = true;
 
   constructor(private router: Router) { }
 
   ngOnInit() {
       this.subscription = this.router.events
       .pipe(filter(event => event instanceof NavigationEnd))
-      .subscribe(() => window.scrollTo(0, 0));
+      .subscribe(() => window.scrollTo(1, 0));
   }
 
   ngOnDestroy() {
@@ -28,14 +28,17 @@ export class AppComponent implements OnInit, OnDestroy {
 
   // for toggling the sidebar
   toggleSidebar() {
-    
-    if(this.collapseSidebar == true)
+    if(this.hideSidebar == true)
     {
-      this.collapseSidebar = false;
+      this.hideSidebar = false;
     }
     else
     {
-      this.collapseSidebar = true;
+      this.hideSidebar = true;
     }
+  }
+
+  collapseSidebar() {
+    this.hideSidebar = true;
   }
 }
