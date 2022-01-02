@@ -9,14 +9,14 @@ $sidebar-width: 270px;
     top: 0;
     left: 0;
     border-right: 1px solid #99d9ff;
-    transition: 0.3s ease-in-out;
+    transition: 0.28s ease-in-out;
 }
 
 #view-content-wrapper {
     max-width: calc(100% - $sidebar-width);
     margin-left: $sidebar-width;
-    transition: 0.3s ease-in-out;
     overflow-x: hidden;
+    transition: 0.28s ease-in-out;
 }
 
 #view-area {
