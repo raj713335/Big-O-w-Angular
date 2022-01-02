@@ -6,41 +6,8 @@
 
   <br />
 
-  <h4>Sorting Algorithms</h4>
-
-  <br />
-
-  <div class="table-responsive">
-    <table class="table table-bordered align-middle text-center table-sort-list">
-      <thead>
-        <tr>
-            <th rowspan="2" class="align-middle">Algorithms</th>
-            <th>Space Complexity</th>
-            <th colspan="3" class="text-center">Time Complexity</th>
-        </tr>
-        <tr>
-          <th scope="col">Worst Case</th>
-          <th scope="col">Best Case</th>
-          <th scope="col">Average Case</th>
-          <th scope="col">Worst Case</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let sortAlgo of sortingAlgoList">
-          <th class="text-start">{{ sortAlgo.name }}</th>
-          <td>{{ sortAlgo.sc_worst }}</td>
-          <td>{{ sortAlgo.tc_best }}</td>
-          <td>{{ sortAlgo.tc_average }}</td>
-          <td>{{ sortAlgo.tc_worst }}</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <br />
-  <br />
-
   <h4>Data Structures Comparison</h4>
+  <p class="text-muted my-0"><small>* Click on the Topic to know more about it</small></p>
 
   <br />
 
@@ -62,7 +29,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let dataStructure of dataStructureList">
+        <tr *ngFor="let dataStructure of dataStructureList" data-bs-toggle="modal" data-bs-target="#displayDSDetails" (click)="onSelectDataStructure(dataStructure)">
           <th class="text-start">{{ dataStructure.name }}</th>
           <td>{{ dataStructure.ac_insert }}</td>
           <td>{{ dataStructure.ac_search }}</td>
@@ -74,4 +41,48 @@
       </tbody>
     </table>
   </div>
+
+  <br />
+  <br />
+
+  <h4>Sorting Algorithms</h4>
+  <p class="text-muted my-0"><small>* Click on the Topic to know more about it</small></p>
+
+  <br />
+
+  <div class="table-responsive">
+    <table class="table table-bordered align-middle text-center table-sort-list">
+      <thead>
+        <tr>
+            <th rowspan="2" class="align-middle">Algorithms</th>
+            <th>Space Complexity</th>
+            <th colspan="3" class="text-center">Time Complexity</th>
+        </tr>
+        <tr>
+          <th scope="col">Worst Case</th>
+          <th scope="col">Best Case</th>
+          <th scope="col">Average Case</th>
+          <th scope="col">Worst Case</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let sortAlgo of sortingAlgoList" data-bs-toggle="modal" data-bs-target="#displaySortAlgoDetails" (click)="onSelectSortAlgo(sortAlgo)">
+          <th class="text-start">{{ sortAlgo.name }}</th>
+          <td>{{ sortAlgo.sc_worst }}</td>
+          <td>{{ sortAlgo.tc_best }}</td>
+          <td>{{ sortAlgo.tc_average }}</td>
+          <td>{{ sortAlgo.tc_worst }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+<div class="modal fade" id="displayDSDetails" tabindex="-1" aria-labelledby="displayBigODetailsLabel" aria-hidden="true">
+  <app-dsmodaldetails [dataStructure]="selectedDataStructure"></app-dsmodaldetails>
+</div>
+
+<div class="modal fade" id="displaySortAlgoDetails" tabindex="-1" aria-labelledby="displayBigODetailsLabel" aria-hidden="true">
+  <app-algomodaldetails [sortAlgo]="selectedSortAlgo"></app-algomodaldetails>
 </div>

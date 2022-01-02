@@ -11,6 +11,12 @@ import { AlgorithmsComponent } from './algorithms/algorithms.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { BigocheatsheetComponent } from './bigocheatsheet/bigocheatsheet.component';
 import { MorecontactComponent } from './morecontact/morecontact.component';
+import { AlgomodaldetailsComponent } from './algomodaldetails/algomodaldetails.component';
+import { DsmodaldetailsComponent } from './dsmodaldetails/dsmodaldetails.component';
+
+import { SortingalgolistService } from './services/sortingalgolist.service';
+import { DatastructurelistService } from './services/datastructurelist.service';
+
 
 @NgModule({
   declarations: [
@@ -21,13 +27,15 @@ import { MorecontactComponent } from './morecontact/morecontact.component';
     DatastructuresComponent,
     AlgorithmsComponent,
     BigocheatsheetComponent,
-    MorecontactComponent
+    MorecontactComponent,
+    AlgomodaldetailsComponent,
+    DsmodaldetailsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [SortingalgolistService, DatastructurelistService],
   bootstrap: [AppComponent]
 })
 

@@ -39,10 +39,21 @@ strong {
     line-height: 26px;
 }
 
+a.text-link {
+    color: #0089c7 !important;
+    text-decoration: none;
+}
+
+a.text-link:hover {
+    text-decoration: underline;
+    text-decoration-color: #a2dffb ;
+}
+
 @media only screen and (max-width: 768px) {
 
     p {
         font-size: 14px;
+        line-height: 24px;
     }
 
     .list-display > li {
