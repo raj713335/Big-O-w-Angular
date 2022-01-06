@@ -29,13 +29,13 @@
       <div class="bg-faint-blue p-3" style="border-radius: 4px;">
         <form #feedbackMessageForm="ngForm" (ngSubmit)="getValues(feedbackMessageForm.value)">
           <div class="mb-3">
-            <input type="text" ngModel class="form-control" placeholder="Full Name" name="name">
+            <input type="text" ngModel class="form-control form-control-sm" placeholder="Full Name" name="name">
           </div>
           <div class="mb-3">
-            <input type="email" ngModel class="form-control" placeholder="Email" name="email">
+            <input type="email" ngModel class="form-control form-control-sm" placeholder="Email" name="email">
           </div>
           <div class="mb-3">
-            <textarea class="form-control" ngModel rows="3" placeholder="Message" name="message"></textarea>
+            <textarea class="form-control form-control-sm" ngModel rows="3" placeholder="Message" name="message"></textarea>
           </div>
           <div class="text-end">
             <button class="btn btn-primary btn-sm">

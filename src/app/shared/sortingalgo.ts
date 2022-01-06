@@ -4,4 +4,5 @@ export class SortingAlgo {
     tc_best: string;
     tc_average: string;
     tc_worst: string;
+    slug: string;
 }

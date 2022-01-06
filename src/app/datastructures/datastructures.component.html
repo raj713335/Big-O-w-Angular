@@ -63,16 +63,16 @@
   <p class="mt-3">
     Types of Data Structures :
   </p>
-  <ul class="list-display">
-    <li>Array</li>
-    <li>Sorted Array</li>
-    <li>Linked List</li>
-    <li>Doubly Linked List</li>
-    <li>Stack</li>
-    <li>Hash Table</li>
-    <li>Binary Search Tree</li>
-    <li>B-Tree</li>
-    <li>Red Black Tree</li>
-    <li>AVL Tree</li>
-  </ul>
+  <div class="row g-3">
+    <div class="col-12 col-sm-6 col-md-4" *ngFor="let dataStructure of dataStructureList">
+      <div class="card">
+        <div class="card-body">
+          <h6 class="text-black">{{ dataStructure.name }}</h6>
+          <a [routerLink]="['/ds', dataStructure.slug]" class="text-link">
+            <p style="font-size: 14px;" class="mb-0">Read More. . .</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

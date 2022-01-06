@@ -30,7 +30,7 @@
       </thead>
       <tbody>
         <tr *ngFor="let dataStructure of dataStructureList" data-bs-toggle="modal" data-bs-target="#displayDSDetails" (click)="onSelectDataStructure(dataStructure)">
-          <th class="text-start">{{ dataStructure.name }}</th>
+          <th class="text-start">{{ dataStructure.name }} <span class="text-muted">*</span></th>
           <td>{{ dataStructure.ac_insert }}</td>
           <td>{{ dataStructure.ac_search }}</td>
           <td>{{ dataStructure.ac_delete }}</td>
@@ -67,7 +67,7 @@
       </thead>
       <tbody>
         <tr *ngFor="let sortAlgo of sortingAlgoList" data-bs-toggle="modal" data-bs-target="#displaySortAlgoDetails" (click)="onSelectSortAlgo(sortAlgo)">
-          <th class="text-start">{{ sortAlgo.name }}</th>
+          <th class="text-start">{{ sortAlgo.name }} <span class="text-muted">*</span></th>
           <td>{{ sortAlgo.sc_worst }}</td>
           <td>{{ sortAlgo.tc_best }}</td>
           <td>{{ sortAlgo.tc_average }}</td>

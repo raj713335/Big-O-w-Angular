@@ -9,6 +9,10 @@ export class DatastructurelistService {
 
   constructor() { }
 
+  getDataStructure(slug: string): DataStructure {
+    return DATASTRUCTURELIST.filter((datastructure) => datastructure.slug == slug)[0];
+  }
+
   getDataStructureList(): DataStructure[] {
     return DATASTRUCTURELIST;
   }

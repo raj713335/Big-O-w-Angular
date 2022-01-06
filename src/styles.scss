@@ -21,6 +21,11 @@ h1, h2, h3, h4, h5, h6 {
     color: #0081cc;
 }
 
+h6.text-black {
+    color: #505050 !important;
+    font-weight: 600 !important;
+}
+
 strong {
     font-weight: 600 !important;
     letter-spacing: 0.2px !important;

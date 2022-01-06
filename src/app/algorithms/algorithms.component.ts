@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { SortingAlgo } from '../shared/sortingalgo';
+import { SortingalgolistService } from '../services/sortingalgolist.service';
 
 @Component({
   selector: 'app-algorithms',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AlgorithmsComponent implements OnInit {
 
-  constructor() { }
+  sortingAlgoList: SortingAlgo[];
+  
+  constructor(private sortingAlgoListService: SortingalgolistService) { }
 
   ngOnInit() {
+    this.sortingAlgoList = this.sortingAlgoListService.getSortAlgoList();
   }
 
 }

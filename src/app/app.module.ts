@@ -18,6 +18,8 @@ import { DsmodaldetailsComponent } from './dsmodaldetails/dsmodaldetails.compone
 
 import { SortingalgolistService } from './services/sortingalgolist.service';
 import { DatastructurelistService } from './services/datastructurelist.service';
+import { DatastructuredetailsComponent } from './datastructuredetails/datastructuredetails.component';
+import { AlgorithmdetailsComponent } from './algorithmdetails/algorithmdetails.component';
 
 
 @NgModule({
@@ -31,7 +33,9 @@ import { DatastructurelistService } from './services/datastructurelist.service';
     BigocheatsheetComponent,
     MorecontactComponent,
     AlgomodaldetailsComponent,
-    DsmodaldetailsComponent
+    DsmodaldetailsComponent,
+    DatastructuredetailsComponent,
+    AlgorithmdetailsComponent
   ],
   imports: [
     BrowserModule,

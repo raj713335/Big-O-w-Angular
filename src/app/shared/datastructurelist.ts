@@ -9,6 +9,7 @@ export const DATASTRUCTURELIST: DataStructure[] = [
       wc_search: 'O(n)',
       wc_insert: 'N/A',
       wc_delete: 'N/A',
+      slug: 'array'
     },
     {
       name: 'Sorted Array',
@@ -18,6 +19,7 @@ export const DATASTRUCTURELIST: DataStructure[] = [
       wc_search: 'O(n log n)',
       wc_insert: 'O(n)',
       wc_delete: 'O(n)',
+      slug: 'sorted-array'
     },
     {
       name: 'Linked List',
@@ -27,6 +29,7 @@ export const DATASTRUCTURELIST: DataStructure[] = [
       wc_search: 'O(n)',
       wc_insert: 'O(1)',
       wc_delete: 'O(1)',
+      slug: 'linked-list'
     },
     {
       name: 'Doubly Linked List',
@@ -36,6 +39,7 @@ export const DATASTRUCTURELIST: DataStructure[] = [
       wc_search: 'O(n)',
       wc_insert: 'O(1)',
       wc_delete: 'O(1)',
+      slug: 'doubly-linked-list'
     },
     {
       name: 'Stack',
@@ -45,6 +49,7 @@ export const DATASTRUCTURELIST: DataStructure[] = [
       wc_search: 'O(n)',
       wc_insert: 'O(1)',
       wc_delete: 'O(1)',
+      slug: 'stack'
     },
     {
       name: 'Hash Table',
@@ -54,6 +59,7 @@ export const DATASTRUCTURELIST: DataStructure[] = [
       wc_search: 'O(n)',
       wc_insert: 'O(n)',
       wc_delete: 'O(n)',
+      slug: 'hash-table'
     },
     {
       name: 'Binary Search Tree',
@@ -63,6 +69,7 @@ export const DATASTRUCTURELIST: DataStructure[] = [
       wc_search: 'O(n)',
       wc_insert: 'O(n)',
       wc_delete: 'O(n)',
+      slug: 'binary-search-tree'
     },
     {
       name: 'B-Tree',
@@ -72,6 +79,7 @@ export const DATASTRUCTURELIST: DataStructure[] = [
       wc_search: 'O(log n)',
       wc_insert: 'O(log n)',
       wc_delete: 'O(log n)',
+      slug: 'b-tree'
     },
     {
       name: 'Red Black Tree',
@@ -81,6 +89,7 @@ export const DATASTRUCTURELIST: DataStructure[] = [
       wc_search: 'O(log n)',
       wc_insert: 'O(log n)',
       wc_delete: 'O(log n)',
+      slug: 'red-black-tree'
     },
     {
       name: 'AVL Tree',
@@ -90,5 +99,6 @@ export const DATASTRUCTURELIST: DataStructure[] = [
       wc_search: 'O(log n)',
       wc_insert: 'O(log n)',
       wc_delete: 'O(log n)',
+      slug: 'avl-tree'
     }
   ];
