@@ -27,15 +27,22 @@
     </div>
     <div class="col-md-8">
       <div class="bg-faint-blue p-3" style="border-radius: 4px;">
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">Send me some Love:</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-        <div class="text-end">
-          <button class="btn btn-primary btn-sm">
-            <i class="fa fa-paper-plane"></i> Send
-          </button>
-        </div>
+        <form #feedbackMessageForm="ngForm" (ngSubmit)="getValues(feedbackMessageForm.value)">
+          <div class="mb-3">
+            <input type="text" ngModel class="form-control form-control-sm" placeholder="Full Name" name="name">
+          </div>
+          <div class="mb-3">
+            <input type="email" ngModel class="form-control form-control-sm" placeholder="Email" name="email">
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control form-control-sm" ngModel rows="3" placeholder="Message" name="message"></textarea>
+          </div>
+          <div class="text-end">
+            <button class="btn btn-primary btn-sm">
+              <i class="fa fa-paper-plane"></i> Send
+            </button>
+          </div>
+        </form>
       </div>
     </div>
   </div>

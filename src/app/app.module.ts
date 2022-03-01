@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { from } from 'rxjs';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
@@ -16,6 +18,8 @@ import { DsmodaldetailsComponent } from './dsmodaldetails/dsmodaldetails.compone
 
 import { SortingalgolistService } from './services/sortingalgolist.service';
 import { DatastructurelistService } from './services/datastructurelist.service';
+import { DatastructuredetailsComponent } from './datastructuredetails/datastructuredetails.component';
+import { AlgorithmdetailsComponent } from './algorithmdetails/algorithmdetails.component';
 
 
 @NgModule({
@@ -29,11 +33,14 @@ import { DatastructurelistService } from './services/datastructurelist.service';
     BigocheatsheetComponent,
     MorecontactComponent,
     AlgomodaldetailsComponent,
-    DsmodaldetailsComponent
+    DsmodaldetailsComponent,
+    DatastructuredetailsComponent,
+    AlgorithmdetailsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [SortingalgolistService, DatastructurelistService],
   bootstrap: [AppComponent]

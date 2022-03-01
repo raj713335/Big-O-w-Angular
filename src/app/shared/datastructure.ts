@@ -6,4 +6,5 @@ export class DataStructure {
     wc_search: string;
     wc_insert: string;
     wc_delete: string;
+    slug: string;
 }

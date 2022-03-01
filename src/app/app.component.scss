@@ -40,8 +40,12 @@ $sidebar-width: 270px;
     color: #0091e6;
     background-color: #e6f6ff;
     font-size: 20px;
-    border: none;
+    border: 1px solid transparent;
     padding: 4px 8px;
+}
+
+#toggle-sidebar:hover {
+    border: 1px solid #99d9ff;
 }
 
 

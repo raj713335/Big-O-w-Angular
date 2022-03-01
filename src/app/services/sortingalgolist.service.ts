@@ -9,6 +9,10 @@ export class SortingalgolistService {
 
   constructor() { }
 
+  getSortAlgo(slug: string): SortingAlgo {
+    return SORTINGALGOLIST.filter((sortingalgo) => sortingalgo.slug == slug)[0];
+  }
+
   getSortAlgoList(): SortingAlgo[] {
     return SORTINGALGOLIST;
   }

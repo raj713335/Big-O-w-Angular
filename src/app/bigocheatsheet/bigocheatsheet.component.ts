@@ -14,8 +14,8 @@ export class BigocheatsheetComponent implements OnInit {
   sortingAlgoList: SortingAlgo[];
   dataStructureList: DataStructure[];
   
-  selectedSortAlgo: SortingAlgo = { name: '', sc_worst: '', tc_best: '', tc_average: '', tc_worst: '' };
-  selectedDataStructure: DataStructure = { name: '', ac_search: '', ac_insert: '', ac_delete: '', wc_search: '', wc_insert: '', wc_delete: '' };
+  selectedSortAlgo: SortingAlgo = { name: '', sc_worst: '', tc_best: '', tc_average: '', tc_worst: '', slug: '' };
+  selectedDataStructure: DataStructure = { name: '', ac_search: '', ac_insert: '', ac_delete: '', wc_search: '', wc_insert: '', wc_delete: '', slug: '' };
 
   constructor(private sortingAlgoListService: SortingalgolistService, private dataStructureService: DatastructurelistService) { }
 

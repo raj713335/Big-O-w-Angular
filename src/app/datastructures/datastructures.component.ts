@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DataStructure } from '../shared/datastructure';
+import { DatastructurelistService } from '../services/datastructurelist.service';
 
 @Component({
   selector: 'app-datastructures',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DatastructuresComponent implements OnInit {
 
-  constructor() { }
+  dataStructureList: DataStructure[];
+
+  constructor( private dataStructureService: DatastructurelistService) { }
 
   ngOnInit() {
+    this.dataStructureList = this.dataStructureService.getDataStructureList();
   }
 
 }
